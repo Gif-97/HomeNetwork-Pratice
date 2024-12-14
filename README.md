@@ -67,12 +67,20 @@ Le configurazioni implementate seguono il principio del minimo privilegio, limit
 1. **Installazione di Docker:**
    - Eseguito il comando `sudo apt install docker.io`.
    - Abilitato il servizio Docker all’avvio: `sudo systemctl enable docker`.
+  
+![Docker ps](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/docker_ps.png)
+     
 2. **Esecuzione di un container di prova:**
    - Eseguito un server web di prova:
      ```bash
      sudo docker run -d -p 80:80 --name test-web nginx
      ```
+![Server di prova](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/docker_server_nginx.png)
+
    - Verificato l’accesso al server web tramite browser da un dispositivo nella rete WAN.
+
+![Accesso a Server Web da Kali](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/schermata_nginx_da_kali.png)
+     
 ---
 ### Verifica e Test
 1. **Verifica delle regole di firewall:**
