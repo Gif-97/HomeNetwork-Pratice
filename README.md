@@ -80,7 +80,26 @@ Le configurazioni implementate seguono il principio del minimo privilegio, limit
    - Verificato l’accesso al server web tramite browser da un dispositivo nella rete LAN.
 
 ![Accesso a Server Web da rete interna](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/schermata_nginx_da_kali.png)
-     
+
+---
+### Integrazione e Configurazione di Ngrok
+Per simulare un ambiente realistico, ho configurato Ngrok sul server Ubuntu nella DMZ. Questo ha permesso di creare un URL pubblico temporaneo, accessibile da qualsiasi dispositivo esterno, bypassando le limitazioni della rete simulata consentendomi di accedervi dal mio smartphone collegato alla rete dati.
+
+## Passaggi principali:
+
+**Installazione di Ngrok:**
+
+- Scaricato e configurato Ngrok sul server Ubuntu.
+- Autenticato il client con un token fornito dalla piattaforma Ngrok.
+- Creazione di un tunnel HTTP:
+
+   - Avviato Ngrok con il comando:
+    ```bash
+      ngrok http 80
+    ```
+**Questo ha generato un URL pubblico: https://abcd1234.ngrok.io.**
+  **Motivazione: L’uso di Ngrok ha dimostrato la capacità di rendere un servizio locale accessibile globalmente in modo sicuro e temporaneo. Questo approccio è utile per test e dimostrazioni pratiche.**
+
 ---
 ### Verifica e Test
 1. **Verifica delle regole di firewall:**
@@ -90,16 +109,43 @@ Le configurazioni implementate seguono il principio del minimo privilegio, limit
 
 
 2. **Test del server nella DMZ:**
-   - Accesso al server web da Internet.
-![Accesso al Server dal WEB](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/nginx_web_android%20tagliata.jpg)
+
+   - Test dell'accesso al server web tramite il link generato:
+
+      ![Verificato il funzionamento del servizio NGINX attraverso browser esterni](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/nginx_web_android%20tagliata.jpg)
+   
 
 
    - Conferma che il traffico dalla DMZ è bloccato verso la LAN.
-  
+     
    ![Creazione server temporaneo dall'interno della LAN](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/Possibilit%C3%A0%20di%20accesso%20a%20rete%20lan.png)
-
    ![Tentativo di connessione non riscito dalla DMZ alla LAN](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/Connessione%20server%20non%20riuscita.png)
    ![LOG traffico bloccato](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/Log_connessione_bloccata.png)
+---
+### Strumenti Utilizzati e Competenze Acquisite
+## Strumenti:
+- **pfSense:** Configurazione di regole avanzate di firewall.
+- **Ngrok:** Creazione di un tunnel pubblico per l’accesso esterno.
+- **Docker:** Gestione di container per il server web.
+- **Ubuntu Server:** Configurazione di un server nella DMZ.
+- **VMWare:** Configurazione della quasi totalità del progetto.
+
+## Competenze Sviluppate:
+- **Accessibilità globale sicura:** Configurazione di Ngrok per creare URL sicuri.
+- **Hardening dei server:** Ottimizzazione e protezione di un servizio web.
+- **Network Security Monitoring:** Analisi dei log per monitorare il traffico.
+- **Risoluzione dei problemi:** Diagnosi e soluzione di problemi legati alla connettività.
+
+---
+## Conclusione
+### Il completamento di questo progetto dimostra competenze fondamentali nel settore cybersecurity, tra cui:
+
+- Implementazione di controlli di sicurezza su firewall e server.
+- Segmentazione della rete per ridurre la superficie di attacco.
+- Hardening e gestione di server pubblici nella DMZ.
+- Analisi dei log e monitoraggio della rete, con un focus sui tool open-source.
+- Questo progetto è un esempio pratico delle mie capacità nel configurare e proteggere ambienti di rete reali, competenza cruciale per i ruoli di Pen Tester e Blue Team Operator.
+
 ---
 ### Miglioramenti Futuri
 1. **Integrazione di Wazuh come SIEM:**
@@ -111,6 +157,3 @@ Le configurazioni implementate seguono il principio del minimo privilegio, limit
 4. **VPN:**
    - Creazione di una VPN per collegamenti sicuri alla rete da remoto.
      
-### Conclusione
-Questo progetto dimostra la mia capacità di configurare un ambiente di rete sicuro con strumenti open source, di risolvere problemi tecnici complessi e di documentare l’intero processo in modo professionale. Tale esperienza è applicabile direttamente in ambiti lavorativi legati alla sicurezza informatica e alla gestione delle infrastrutture.
-
