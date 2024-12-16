@@ -106,6 +106,11 @@ Le configurazioni implementate seguono il principio del minimo privilegio, limit
    - Pianificato per monitorare i log di pfSense e i container Docker.
 2. **Espansione della DMZ:**
    - Aggiunta di ulteriori servizi pubblici (es. server FTP o DNS) con regole di firewall dedicate.
+3. **Intergrazione di un honeypot:**
+   - Posizionato in una vLAN esterna al firewall e creata ad hoc.
+4. **VPN:**
+   - Creazione di una VPN per collegamenti sicuri alla rete da remoto.
+     
 ### Conclusione
 Questo progetto dimostra la mia capacità di configurare un ambiente di rete sicuro con strumenti open source, di risolvere problemi tecnici complessi e di documentare l’intero processo in modo professionale. Tale esperienza è applicabile direttamente in ambiti lavorativi legati alla sicurezza informatica e alla gestione delle infrastrutture.
 
