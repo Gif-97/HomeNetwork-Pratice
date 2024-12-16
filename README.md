@@ -77,17 +77,29 @@ Le configurazioni implementate seguono il principio del minimo privilegio, limit
      ```
 ![Server di prova](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/docker_server_nginx.png)
 
-   - Verificato l’accesso al server web tramite browser da un dispositivo nella rete WAN.
+   - Verificato l’accesso al server web tramite browser da un dispositivo nella rete LAN.
 
-![Accesso a Server Web da Kali](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/schermata_nginx_da_kali.png)
+![Accesso a Server Web da rete interna](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/schermata_nginx_da_kali.png)
      
 ---
 ### Verifica e Test
 1. **Verifica delle regole di firewall:**
    - Eseguito traffico di prova (es. HTTP/HTTPS) per confermare il funzionamento delle regole implementate.
+  
+![Log regole pfSense](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/Log%20regole.png)
+
+
 2. **Test del server nella DMZ:**
    - Accesso al server web da Internet.
+![Accesso al Server dal WEB](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/nginx_web_android%20tagliata.jpg)
+
+
    - Conferma che il traffico dalla DMZ è bloccato verso la LAN.
+  
+   ![Creazione server temporaneo dall'interno della LAN](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/Possibilit%C3%A0%20di%20accesso%20a%20rete%20lan.png)
+
+   ![Tentativo di connessione non riscito dalla DMZ alla LAN](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/Connessione%20server%20non%20riuscita.png)
+   ![LOG traffico bloccato](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/Log_connessione_bloccata.png)
 ---
 ### Miglioramenti Futuri
 1. **Integrazione di Wazuh come SIEM:**
