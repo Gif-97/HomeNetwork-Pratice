@@ -14,6 +14,10 @@ Le configurazioni implementate seguono il principio del minimo privilegio, limit
 3. Configurare regole di firewall che consentano solo il traffico necessario.
 4. Installare e configurare Docker su un server nella DMZ per ospitare applicazioni sicure.
 ---
+### Schema logico della rete:
+![Topologia Logica](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/Topologia%20Logica.png)
+
+---
 ### Configurazione di pfSense
 #### Configurazione delle Interfacce
 1. **LAN:**
@@ -40,7 +44,7 @@ Le configurazioni implementate seguono il principio del minimo privilegio, limit
 -   Regole WAN
 <img src="https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/Regole%20WAN%20per%20GIT.png" width=450 height=250>
 -  Regole DMZ
-<img src="https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/REGOLE%20DMZ%20per%20GIT.png" width=450 height=250>
+<img src="https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/Regole%20DMZ%20(2).png" width=450 height=250>
 -   Regole LAN
 <img src="https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/Regole%20LAN%20per%20GIT.png" width=450 height=250>
 -  Logging attivato per le regole critiche
@@ -98,6 +102,8 @@ Per simulare un ambiente realistico, ho configurato Ngrok sul server Ubuntu nell
       ngrok http 80
     ```
 **Questo ha generato un URL pubblico: https://abcd1234.ngrok.io.**
+![Tunneling ngrok](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/Ngrok%20Tunnel.png)
+
   **Motivazione: L’uso di Ngrok ha dimostrato la capacità di rendere un servizio locale accessibile globalmente in modo sicuro e temporaneo. Questo approccio è utile per test e dimostrazioni pratiche.**
 
 ---
