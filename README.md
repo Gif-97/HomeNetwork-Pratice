@@ -159,7 +159,7 @@ Per simulare un ambiente realistico, ho configurato Ngrok sul server Ubuntu nell
 2. **Espansione della DMZ:**
    - Aggiunta di ulteriori servizi pubblici (es. server FTP o DNS) con regole di firewall dedicate.
 3. **Intergrazione di un honeypot:**
-   - Posizionato in una vLAN esterna al firewall e creata ad hoc.
+   - Posizionato in una vLAN esterna al firewall e creata ad hoc per l'analisi del comportamento di utenti malintenzionati.
 4. **VPN:**
    - Creazione di una VPN per collegamenti sicuri alla rete da remoto.
      
