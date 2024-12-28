@@ -101,7 +101,7 @@ Per simulare un ambiente realistico, ho configurato Ngrok sul server Ubuntu nell
     ```bash
       ngrok http 80
     ```
-**Questo ha generato un URL pubblico: [https://abcd1234.ngrok.io](https://ae7e-93-42-32-106.ngrok-free.app).**
+**Questo ha generato un URL pubblico: https://ae7e-93-42-32-106.ngrok-free.app.**
 ![Tunneling ngrok](https://github.com/Gif-97/HomeNetwork-Pratice/blob/main/media/pic/HomeNetworkPratice%20GIT/Ngrok%20Tunnel.png)
 
   **Motivazione: L’uso di Ngrok ha dimostrato la capacità di rendere un servizio locale accessibile globalmente in modo sicuro e temporaneo. Questo approccio è utile per test e dimostrazioni pratiche.**
