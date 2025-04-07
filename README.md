@@ -144,7 +144,7 @@ Per simulare un ambiente realistico, ho configurato Ngrok sul server Ubuntu nell
 
 ---
 ## Conclusione
-### Il completamento di questo progetto dimostra competenze fondamentali nel settore cybersecurity, tra cui:
+### Il completamento di questo progetto dimostra competenze fondamentali nella cybersecurity, tra cui:
 
 - Implementazione di controlli di sicurezza su firewall e server.
 - Segmentazione della rete per ridurre la superficie di attacco.
